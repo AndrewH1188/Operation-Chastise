@@ -1,0 +1,54 @@
+/* --------------------------------------------------- Navbar */
+
+.navbar-bg { 
+    padding: 30px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: x-large;
+    color: #000;
+}
+
+.navbar-brand:hover {
+    color: #71684b;
+}
+
+.nav-links {
+    padding-left: 59%;
+    text-align: left;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #71684b;
+}
+
+.active {
+    color: #454636;
+}
+
+.navbar-toggler {
+    color: #fff;
+    padding: 0;
+}
+
+
+/* --------------------------------------------------- Anniversary Date Box */
+.anniversaryDateBox {
+    background: #454636;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}    
+
+.dateText { margin-bottom: 0;}
+
+.anniversaryText {
+    font-size: 2.16rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
