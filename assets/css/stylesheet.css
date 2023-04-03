@@ -3,7 +3,8 @@
 .navbar-bg { 
     background: #fff;
     padding: 30px;
-    height: 90px;
+    margin: 15px 0;
+    /* height: 90px;  */
 
 }
 
@@ -34,10 +35,7 @@
     color: #454636;
 }
 
-.navbar-toggler {
-    color: #fff;
-    padding: 0;
-}
+.fa-bars { color: #000;}
 
 
 /* --------------------------------------------------- Anniversary Date Box */
@@ -55,8 +53,6 @@
     margin-bottom: 0;
     font-weight: 600;
 }
-
-
 
 
 /* --------------------------------------------------- Learn, Reflect, Remember Section */
