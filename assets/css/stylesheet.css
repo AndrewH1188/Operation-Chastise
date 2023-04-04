@@ -67,8 +67,8 @@
 }
 
 .learnMoreBtn:hover { 
-    background:#997c50;
-    color: #000;
+    background:#71684b;
+    color: #fff;
 }
 
 
@@ -121,7 +121,7 @@
 }
 
 .social-media a:hover {
-    color: #454636;
+    color: #71684b;
 }
 
 .WWRT {
@@ -158,11 +158,11 @@ html {
 
 /* My Own Code */
 .back-to-top-button {
-    background: #e0780c;
+    background: #454636;
     color: #fff;
 }
 
 .back-to-top-button:hover {
-    background: #be6709;
+    background: #71684b;
     color: #fff;
 }
