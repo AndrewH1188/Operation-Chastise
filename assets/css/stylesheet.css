@@ -78,6 +78,9 @@
 .LRRSection .Remember {
   grid-area: Remem;
 }
+.LRRSection p {
+  padding-top: 10px;
+}
 
 .learnMoreBtn {
   background: #454636;
@@ -90,16 +93,58 @@
 }
 
 /* --------------------------------------------------- Visit & Heroes Section */
+/* --------------------------------------------------- Learn, Reflect, Remember Section */
 .VisitTxtBG, .HeroesTxtBG {
   background: #ececeb;
+  padding: 10px;
 }
 
-.visit-txt, .heroes-txt {
-  padding: 40px;
+.Visit .row {
+  display: grid;
+  grid-template-areas: "visitIG" "visitTX";
+  grid-template-columns: 290px;
+  grid-template-rows: 1fr;
+  margin: 80px 0;
 }
-
-.col-md-4, .col-md-8 {
+@media screen and (min-width: 992px) {
+  .Visit .row {
+    grid-template-areas: "visitIG visitTX";
+    grid-template-columns: 850px 300px;
+  }
+}
+.Visit .VisitImg {
+  grid-area: visitIG;
   padding: 0;
+}
+.Visit .VisitImg img {
+  max-width: -webkit-fill-available;
+}
+.Visit .visit-txt {
+  grid-area: visitTX;
+}
+
+.Heroes .row {
+  display: grid;
+  grid-template-areas: "heroeTX" "heroeIG";
+  grid-template-columns: 290px;
+  grid-template-rows: 1fr;
+  margin: 80px 0;
+}
+@media screen and (min-width: 992px) {
+  .Heroes .row {
+    grid-template-areas: "heroeTX heroeIG";
+    grid-template-columns: 300px 850px;
+  }
+}
+.Heroes .HeroesImg {
+  grid-area: heroeIG;
+  padding: 0;
+}
+.Heroes .HeroesImg img {
+  max-width: -webkit-fill-available;
+}
+.Heroes .heroes-txt {
+  grid-area: heroeTX;
 }
 
 /* --------------------------------------------------- Footer */
