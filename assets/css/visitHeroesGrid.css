@@ -1,0 +1,62 @@
+/* --------------------------------------------------- Visit & Heroes Section */
+.VisitTxtBG, .HeroesTxtBG {
+  background: #ececeb;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Visit, .Heroes {
+  padding: 0;
+}
+.Visit .container, .Heroes .container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.Visit .row, .Heroes .row {
+  display: grid;
+  grid-template-areas: "visitIG" "visitTX";
+  grid-template-columns: 1fr;
+  margin: 80px 0;
+}
+.Visit .VisitImg, .Visit .HeroesImg, .Heroes .VisitImg, .Heroes .HeroesImg {
+  padding: 0;
+}
+.Visit .VisitImg img, .Visit .HeroesImg img, .Heroes .VisitImg img, .Heroes .HeroesImg img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Visit .visit-txt {
+  grid-area: heroeTX;
+}
+.Visit .VisitImg {
+  grid-area: visitIG;
+}
+
+.Heroes .heroes-txt {
+  grid-area: heroeTX;
+}
+.Heroes .HeroesImg {
+  grid-area: heroeIG;
+}
+
+@media screen and (min-width: 992px) {
+  .Visit .row, .Heroes .row {
+    align-items: center;
+  }
+  .Visit .row {
+    grid-template-areas: "visitIG visitTX";
+    grid-template-columns: 1fr 500px;
+  }
+  .Heroes .row {
+    grid-template-areas: "heroeTX heroeIG";
+    grid-template-columns: 500px 1fr;
+  }
+}/*# sourceMappingURL=visitHeroesGrid.css.map */
