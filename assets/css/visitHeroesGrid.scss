@@ -3,10 +3,8 @@
     background: #ececeb;
     height: 100%;
     
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+
 }
 
 // -------------- VISIT AND HEROES COMBINED SECTION -------------- \\
@@ -19,9 +17,7 @@
     }
     .row {
         display: grid;
-        grid-template-areas: 
-        "visitIG"
-        "visitTX";
+
         grid-template-columns: 1fr;
         margin: 80px 0;
     }
@@ -38,16 +34,29 @@
 }
 
 // -------------- VISIT SECTION -------------- \\
-.Visit { 
-    .visit-txt { grid-area: heroeTX; }
+.Visit {
+    .row {
+        grid-template-areas: 
+            "visitIG"
+            "visitTX";
+    }
+
+    .visit-txt { grid-area: visitTX; }
     .VisitImg { grid-area: visitIG; }
 }
 
 // -------------- HEROES SECTION -------------- \\
 .Heroes { 
+    .row {
+        grid-template-areas: 
+            "heroeIG"
+            "heroeTX";
+    }
+
     .heroes-txt { grid-area: heroeTX; }
     .HeroesImg { grid-area: heroeIG; }
 }
+
 
 // MEDIA QUERY
 @media screen and (min-width: 992px) {

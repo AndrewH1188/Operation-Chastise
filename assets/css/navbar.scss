@@ -14,8 +14,9 @@
 .navbar-brand:hover { color: #71684b; }
 
 .nav-links {
-    padding-left: 59%;
+    padding-left: 50%;
     text-align: left;
+    @media screen and (min-width: 1200px) { padding-left: 59%;  }
 }
 
 .nav-link { color: #000; }
@@ -24,4 +25,4 @@
 
 .active { color: #454636; }
 
-.fa-bars { color: #000;}
+.fa-bars { color: #000; }

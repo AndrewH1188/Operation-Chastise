@@ -16,8 +16,13 @@
 }
 
 .nav-links {
-  padding-left: 59%;
+  padding-left: 50%;
   text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .nav-links {
+    padding-left: 59%;
+  }
 }
 
 .nav-link {
@@ -95,10 +100,7 @@
 .VisitTxtBG, .HeroesTxtBG {
   background: #ececeb;
   height: 100%;
-  padding-left: 40px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .Visit, .Heroes {
@@ -111,7 +113,6 @@
 }
 .Visit .row, .Heroes .row {
   display: grid;
-  grid-template-areas: "visitIG" "visitTX";
   grid-template-columns: 1fr;
   margin: 80px 0;
 }
@@ -126,13 +127,19 @@
      object-fit: cover;
 }
 
+.Visit .row {
+  grid-template-areas: "visitIG" "visitTX";
+}
 .Visit .visit-txt {
-  grid-area: heroeTX;
+  grid-area: visitTX;
 }
 .Visit .VisitImg {
   grid-area: visitIG;
 }
 
+.Heroes .row {
+  grid-template-areas: "heroeIG" "heroeTX";
+}
 .Heroes .heroes-txt {
   grid-area: heroeTX;
 }
@@ -217,5 +224,4 @@ html {
   text-align: center;
   font-size: x-small;
   color: #fff;
-  /* margin-top: 5px; */
 }/*# sourceMappingURL=stylesheet.css.map */

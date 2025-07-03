@@ -16,8 +16,13 @@
 }
 
 .nav-links {
-  padding-left: 59%;
+  padding-left: 50%;
   text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .nav-links {
+    padding-left: 59%;
+  }
 }
 
 .nav-link {
