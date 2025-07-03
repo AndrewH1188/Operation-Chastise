@@ -1,0 +1,41 @@
+/* --------------------------------------------------- Footer */
+.footer-bg {
+  background: #000;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.connect-with-me {
+  color: #fff;
+  text-align: center;
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.social-media {
+  text-align: center;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 25px;
+}
+
+.social-media a:hover {
+  color: #71684b;
+}
+
+.WWRT {
+  text-align: center;
+  font-size: medium;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.credits {
+  text-align: center;
+  font-size: x-small;
+  color: #fff;
+}/*# sourceMappingURL=footer.css.map */

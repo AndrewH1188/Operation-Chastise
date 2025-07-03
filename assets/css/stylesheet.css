@@ -1,10 +1,8 @@
-@import "visitHeroesGrid.css";
 /* --------------------------------------------------- Navbar */
 .navbar-bg {
   background: #fff;
   padding: 30px;
   margin: 15px 0;
-  /* height: 90px;  */
 }
 
 .navbar-brand {
@@ -93,6 +91,92 @@
   color: #fff;
 }
 
+/* --------------------------------------------------- Visit & Heroes Section */
+.VisitTxtBG, .HeroesTxtBG {
+  background: #ececeb;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Visit, .Heroes {
+  padding: 0;
+}
+.Visit .container, .Heroes .container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.Visit .row, .Heroes .row {
+  display: grid;
+  grid-template-areas: "visitIG" "visitTX";
+  grid-template-columns: 1fr;
+  margin: 80px 0;
+}
+.Visit .VisitImg, .Visit .HeroesImg, .Heroes .VisitImg, .Heroes .HeroesImg {
+  padding: 0;
+}
+.Visit .VisitImg img, .Visit .HeroesImg img, .Heroes .VisitImg img, .Heroes .HeroesImg img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Visit .visit-txt {
+  grid-area: heroeTX;
+}
+.Visit .VisitImg {
+  grid-area: visitIG;
+}
+
+.Heroes .heroes-txt {
+  grid-area: heroeTX;
+}
+.Heroes .HeroesImg {
+  grid-area: heroeIG;
+}
+
+@media screen and (min-width: 992px) {
+  .Visit .row, .Heroes .row {
+    align-items: center;
+  }
+  .Visit .row {
+    grid-template-areas: "visitIG visitTX";
+    grid-template-columns: 1fr 500px;
+  }
+  .Heroes .row {
+    grid-template-areas: "heroeTX heroeIG";
+    grid-template-columns: 500px 1fr;
+  }
+}
+/*--------------------------------------------- Back to top button */
+/* The code here for the back to top button has been taken from Material Design for Bootstrap (MDB) v5 & v4 */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* My Own Code */
+.back-to-top-button {
+  background: #454636;
+  color: #fff;
+}
+
+.back-to-top-button:hover {
+  background: #71684b;
+  color: #fff;
+}
+
 /* --------------------------------------------------- Footer */
 .footer-bg {
   background: #000;
@@ -134,28 +218,4 @@
   font-size: x-small;
   color: #fff;
   /* margin-top: 5px; */
-}
-
-/*--------------------------------------------- Back to top button */
-/* The code here for the back to top button has been taken from Material Design for Bootstrap (MDB) v5 & v4 */
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* My Own Code */
-.back-to-top-button {
-  background: #454636;
-  color: #fff;
-}
-
-.back-to-top-button:hover {
-  background: #71684b;
-  color: #fff;
 }/*# sourceMappingURL=stylesheet.css.map */
